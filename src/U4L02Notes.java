@@ -11,7 +11,7 @@ import javax.swing.UIManager;
 
 public class U4L02Notes extends JFrame {
 	
-	public static final String FILE_NAME = "/wakeup.jpg";
+	public static final String FILE_NAME = "/Dusty.jpg";
 	
 	public U4L02Notes(){
 		initGUI();
@@ -35,7 +35,33 @@ public class U4L02Notes extends JFrame {
 		//Image panel
 		
 		ImagePanel imgPanel = new ImagePanel(FILE_NAME);
-		add(imgPanel, BorderLayout.CENTER);
+		add(imgPanel, BorderLayout.LINE_START);
+		
+		/*grayscale 
+		ImagePanel grayImgPanel = new ImagePanel(FILE_NAME);
+		grayImgPanel.convertToGrayScale();
+		add(grayImgPanel, BorderLayout.LINE_END);
+		*/
+		
+		/* red
+		ImagePanel rGBImgPanel = new ImagePanel(FILE_NAME);
+		rGBImgPanel.convertToRedEffect();
+		add(rGBImgPanel, BorderLayout.LINE_END);
+		*/
+		
+		/* green
+		ImagePanel rGBImgPanel = new ImagePanel(FILE_NAME);
+		rGBImgPanel.convertToGreenEffect();
+		add(rGBImgPanel, BorderLayout.LINE_END);
+		*/
+		
+		//blue
+		ImagePanel rGBImgPanel = new ImagePanel(FILE_NAME);
+		rGBImgPanel.convertToBlueEffect();
+		add(rGBImgPanel, BorderLayout.LINE_END);
+		
+		
+		
 
 
 	}
